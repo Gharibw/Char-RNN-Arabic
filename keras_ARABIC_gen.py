@@ -8,8 +8,8 @@ from keras.callbacks import ModelCheckpoint
 from keras.utils import np_utils
 import sys
 
-# hi
 # importing the training data
+# read the local text file.. exists in the same repo
 with open('Clean_AA_tweets.txt') as f:
     raw_text = f.read()
 
