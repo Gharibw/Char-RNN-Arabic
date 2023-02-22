@@ -9,7 +9,6 @@ from keras.utils import np_utils
 import sys
 
 # importing the training data
-# read the local text file.. exists in the same repo
 with open('Clean_AA_tweets.txt') as f:
     raw_text = f.read()
 
@@ -21,7 +20,7 @@ int_to_char = dict((i, c) for i, c in enumerate(chars))
 n_chars = len(raw_text)
 n_vocab = len(chars)
 
-# create the range!
+# create a range
 # prepare the dataset of input to output pairs encoded as integers
 seq_length = 100
 dataX = []
